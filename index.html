@@ -298,7 +298,7 @@ function virtualCard(label) {
     <ol>
       <li>학사행정시스템에서 논문지도를 직접 신청합니다. (매 학기 초 수강신청기간 내)<br>${path(CONFIG.paths.apply)} → <b>[신규]</b> → 입력 → <b>[저장]</b><br>저장하면 상태가 '제출'로 표시됩니다.${images(imagesOf("신청"))}</li>
       <li>가상계좌를 조회합니다.
-        <p class="alert"><b>가상계좌가 없는 경우</b> → 이미 등록금 납부 시에 (학생경비 등과 함께) 납부한 경우입니다. 추가로 납부하지 않아도 됩니다.<br>납부 여부는 ${path(CONFIG.paths.payment)} 에서 확인할 수 있습니다.</p>
+        <p class="alert"><b>가상계좌가 없는 경우</b> → 이미 등록금 납부 시에 (학생경비 등과 함께) 납부한 경우입니다. 추가로 납부하지 않아도 됩니다.(만일, 수료생이시면 일반계좌로 납부바랍니다.)<br>납부 여부는 ${path(CONFIG.paths.payment)} 에서 확인할 수 있습니다.</p>
         ${path(CONFIG.paths.virtual)} → <b>[조회]</b>${images(imagesOf("가상계좌"))}</li>
       <li>조회된 가상계좌로 ${won(CONFIG.fee)}을 수납기간 내에 납부합니다. <b>반영까지 약 1일</b> 걸릴 수 있습니다.</li>
     </ol>
